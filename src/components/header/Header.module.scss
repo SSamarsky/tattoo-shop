@@ -6,7 +6,7 @@
     background-color: #000;
     color: $whiteColor;
     font-size: 15px;
-    font-family: $JostFonts;
+    font-family: $JostFont;
 
     .container {
         max-width: 1216px;
@@ -38,14 +38,20 @@
             transition: all .2s ease;
         }
 
+        & svg path {
+            transition: all .2s ease;
+        }
+
         &:hover {
             stroke: $goldColor;
             color: $goldColor;
         }
 
-        ;
-
         &:hover svg {
+            stroke: $goldColor;
+        }
+
+        &:hover svg path {
             stroke: $goldColor;
         }
     }
@@ -79,7 +85,7 @@
     .logo__title {
         width: 170px;
         font-size: 30px;
-        font-family: $ForumFonts;
+        font-family: $ForumFont;
         font-weight: 400;
         align-self: center;
     }
@@ -88,7 +94,7 @@
         margin-top: 3px;
         align-self: center;
         font-size: 14px;
-        font-family: $JostFonts;
+        font-family: $JostFont;
         font-weight: 300;
         letter-spacing: 3.5px;
         line-height: 150%;
@@ -174,7 +180,6 @@
     }
 }
 
-
 .header__menu {
     height: 55px;
     padding-top: 13px;
@@ -186,17 +191,33 @@
     }
 }
 
-
 .control {
     display: flex;
     gap: 10px;
     align-items: center;
 
+    & .control__title {
+        transition: all .2s ease;
+    }
+
+    & .burger div {
+        transition: all .2s ease;
+    }
+
+    &:hover .control__title {
+        color: $goldColor;
+    }
+
+    &:hover .burger div {
+        background-color: $whiteColor;
+    }
+
     .control__title {
         margin-top: -5px;
         font-size: 25px;
-        font-family: $JostFonts;
+        font-family: $JostFont;
         font-weight: 400;
+        cursor: pointer;
     }
 
     .burger {
@@ -204,6 +225,7 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
+        cursor: pointer;
 
         & div {
             height: 2px;

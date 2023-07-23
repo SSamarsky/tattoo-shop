@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-import SvgGenerator from "../../instruments/svgGenerator/SvgGenerator";
+import SvgGenerator from "../../instruments/SvgGenerator";
 import classNames from "classnames";
 
 const Header = () => {

@@ -1,0 +1,32 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    width: 205px;
+    height: 70px;
+
+    .svg {
+        position: relative;
+        z-index: 10;
+    }
+
+    .text {
+        position: relative;
+        z-index: 100;
+        color: $whiteColor;
+        bottom: 58px;
+        left: 65px;
+        font-family: $JostFont;
+        font-size: 20px;
+    }
+
+    & svg path {
+        transition: all .3s ease;
+    }
+
+    &:hover svg path {
+        opacity: .75;
+    }
+}

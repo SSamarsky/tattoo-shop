@@ -1,15 +1,20 @@
-import styles from "./SvgGenerator.module.css";
-
 const SvgGenerator = ({ name }) => {
   // eslint-disable-next-line default-case
   switch (name) {
     case "call":
       return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M5 7.37753L8.30288 5.00627C8.30288 5.00627 8.39654 4.90627 9.00967 5.50499C9.6228 6.10371 11.7383 8.86252 11.7383 8.86252L11.0142 11.8828L16.633 17.4993L19.6524 16.7763L22.9923 19.2441L23.5089 20.2115L21.1375 23.5142L17.5132 23.4803L5.03389 11.0017L5 7.37753Z"
+            stroke="#FAF6F2"
             stroke-width="1.5"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -157,12 +162,23 @@ const SvgGenerator = ({ name }) => {
           />
         </svg>
       );
-      case 'btn':
-        return (
-          <svg width="275" height="70" viewBox="0 0 275 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 17.5V1H259V17.5V26.25V26.8244L259.496 27.1138L273.015 35L259.496 42.8862L259 43.1756V43.75V52.5V69H16V52.5V43.75V43.1756L15.5039 42.8862L1.98463 35L15.5039 27.1138L16 26.8244V26.25V17.5Z" fill="#524336" stroke="#BB8C5F" stroke-width="2"/>
-          </svg>
-        )
+    case "btn1":
+      return (
+        <svg
+          width="275"
+          height="70"
+          viewBox="0 0 275 70"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 17.5V1H259V17.5V26.25V26.8244L259.496 27.1138L273.015 35L259.496 42.8862L259 43.1756V43.75V52.5V69H16V52.5V43.75V43.1756L15.5039 42.8862L1.98463 35L15.5039 27.1138L16 26.8244V26.25V17.5Z"
+            fill="#524336"
+            stroke="#BB8C5F"
+            stroke-width="2"
+          />
+        </svg>
+      );
   }
 };
 
