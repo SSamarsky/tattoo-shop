@@ -1,5 +1,6 @@
 import Header from '../../components/header/Header';
 import Intro from '../../components/intro/Intro';
+import Products from '../../components/products/Products';
 
 const HomePage = () => {
     return (
@@ -7,6 +8,7 @@ const HomePage = () => {
             <Header />
             <main>
                 <Intro />
+                <Products />
             </main>
         </div>
     );
