@@ -1,0 +1,38 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    width: 205px;
+    height: 70px;
+    right: 35px;
+
+    .svg {
+        position: relative;
+        z-index: 10;
+    }
+
+    .text {
+        position: relative;
+        z-index: 100;
+        color: $goldColor;
+        bottom: 58px;
+        left: 80px;
+        font-family: $JostFont;
+        font-size: 20px;
+        transition: all .3s ease;
+    }
+
+    & svg path {
+        transition: all .3s ease;
+    }
+
+    &:hover svg path {
+        fill: $goldColor;
+    }
+
+    &:hover .text {
+        color: $whiteColor;
+    }
+}

@@ -1,0 +1,26 @@
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #BB8C5F;
+    position: relative;
+
+    .arrow {
+        width: 8px;
+        height: 8px;
+        background-color: #BB8C5F;
+        transform: rotate(45deg);
+    }
+
+    .left {
+        position: relative;
+        bottom: 3px;
+        right: 5px;
+    }
+
+    .right {
+        position: relative;
+        margin-left: auto;
+        bottom: 11px;
+        left: 5px;
+    }
+}
