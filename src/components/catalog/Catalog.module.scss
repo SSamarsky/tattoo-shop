@@ -1,0 +1,144 @@
+@import '../../styles/fonts.scss';
+
+.container {
+    margin: 0 auto;
+    width: 1217px;
+    padding-bottom: 120px;
+}
+
+.title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: $ForumFont;
+    font-size: 60px;
+    font-weight: 400;
+    color: #3E424B;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .item {
+        background-color: #F5F5F5;
+        height: 350px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            -webkit-box-shadow: 3px 3px 9px 1px rgba(34, 60, 80, 0.15);
+            -moz-box-shadow: 3px 3px 9px 1px rgba(34, 60, 80, 0.15);
+            box-shadow: 3px 3px 9px 1px rgba(34, 60, 80, 0.15);
+        }
+
+        .item__title {
+            margin-top: 40px;
+            margin-left: 50px;
+            color: #3E424B;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: $JostFont;
+            line-height: 1.1;
+        }
+
+        .item__title_1 {
+            width: 113px;
+        }
+
+        .item__title_4 {
+            width: 150px;
+        }
+
+        .item__title_9 {
+            line-height: 1.3;
+        }
+    }
+
+    .item:nth-child(1n) {
+        width: 494px;
+        background-image: url('../../assets/images/catalogs/tattoo_sets.png');
+        background-repeat: no-repeat;
+        background-position-x: 130px;
+    }
+
+    .item:nth-child(2n) {
+        width: 701px;
+        background-image: url('../../assets/images/catalogs/holders.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 80px;
+    }
+
+    .item:nth-child(3n) {
+        width: 342px;
+        background-image: url('../../assets/images/catalogs/tattoo_machines.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 90px;
+    }
+
+    .item:nth-child(4n) {
+        width: 493px;
+        background-image: url('../../assets/images/catalogs/pedals_and_wires.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 145px;
+    }
+
+    .item:nth-child(5n) {
+        width: 341px;
+        background-image: url('../../assets/images/catalogs/paints.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 80px;
+    }
+
+    .item:nth-child(6n) {
+        width: 495px;
+        background-image: url('../../assets/images/catalogs/power_supplies.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 80px;
+    }
+
+    .item:nth-child(7n) {
+        width: 341px;
+        background-image: url('../../assets/images/catalogs/tips.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 60px;
+    }
+
+    .item:nth-child(8n) {
+        width: 341px;
+        background-image: url('../../assets/images/catalogs/needle_tattoo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 60px;
+    }
+
+    .item:nth-child(9n) {
+        width: 340px;
+        background-image: url('../../assets/images/catalogs/protection.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 95px;
+    }
+
+    .item:nth-child(10n) {
+        width: 340px;
+        background-image: url('../../assets/images/catalogs/accessories.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 95px;
+    }
+
+    .item:nth-child(11n) {
+        width: 495px;
+        background-image: url('../../assets/images/catalogs/printers_and_tablets.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 0px;
+    }
+}
