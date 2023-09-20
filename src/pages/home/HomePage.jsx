@@ -1,6 +1,7 @@
 import Catalog from "../../components/catalog/Catalog";
 import Intro from "../../components/intro/Intro";
 import Products from "../../components/products/Products";
+import Banners from "../../components/banners/Banners";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Intro />
       <Products />
       <Catalog />
+      <Banners />
     </main>
   );
 };
