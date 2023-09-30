@@ -1,0 +1,71 @@
+.brands {
+    margin: 115px auto 120px;
+    width: 1376px;
+    position: relative;
+}
+
+.title {
+    margin-left: 80px;
+    margin-bottom: 25px;
+    text-align: left;
+    color: #3E424B;
+    font-family: 'Forum', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.link {
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    font-size: 25px;
+    color: #3E424B;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.link:hover {
+    opacity: .8;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #BB8C5F;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.button:hover {
+    opacity: .75;
+}
+
+.slider {
+    display: flex;
+    height: 204px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items {
+    width: 1216px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.item {
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.item:hover {
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}

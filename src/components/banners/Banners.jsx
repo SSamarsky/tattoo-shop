@@ -14,7 +14,7 @@ const Banners = () => {
                 </div>
             </div>
             <div className={classNames(styles.banner, styles.right)}>
-                <h2 className={classNames(styles.title, styles.title_right)}>Foxx viper — хит 2021 года</h2>
+                <h2 className={classNames(styles.title, styles.title_right)}>Foxx viper —хит 2021 года</h2>
                 <div className={classNames(styles.button, styles.button_right)}>
                     <p className={styles.link}>Смотреть в каталоге</p>
                     <BottomLine />
@@ -23,5 +23,5 @@ const Banners = () => {
         </div>
     );
 }
- 
+
 export default Banners;

@@ -2,6 +2,7 @@ import Catalog from "../../components/catalog/Catalog";
 import Intro from "../../components/intro/Intro";
 import Products from "../../components/products/Products";
 import Banners from "../../components/banners/Banners";
+import Brands from "../../components/brands/Brands";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Products />
       <Catalog />
       <Banners />
+      <Brands />
     </main>
   );
 };
