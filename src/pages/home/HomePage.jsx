@@ -4,6 +4,7 @@ import Products from "../../components/products/Products";
 import Banners from "../../components/banners/Banners";
 import Brands from "../../components/brands/Brands";
 import Info from "../../components/Info/Info";
+import Reviews from "../../components/reviews/Reviews";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Banners />
       <Brands />
       <Info />
+      <Reviews />
     </main>
   );
 };

@@ -110,29 +110,5 @@
         flex-direction: column;
         align-items: center;
         gap: 13px;
-
-        .control__checkbox {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 16px;
-            height: 16px;
-            border: 1px solid $brownColor;
-
-            .checkbox {
-                width: 10px;
-                height: 10px;
-                cursor: pointer;
-                transition: all .2s ease;
-            }
-
-            .checkbox:hover {
-                background-color: $goldColor;
-            }
-
-            .checkbox_active {
-                background-color: $goldColor;
-            }
-        }
     }
 }

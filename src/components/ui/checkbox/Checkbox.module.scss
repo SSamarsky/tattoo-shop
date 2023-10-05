@@ -1,0 +1,23 @@
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #524336;
+    cursor: pointer;
+
+    .checked {
+        width: 10px;
+        height: 10px;
+        transition: all .2s ease;
+    }
+
+    &:hover .checked {
+        background-color: #BB8C5F;
+    }
+
+    .active {
+        background-color: #BB8C5F;
+    }
+}

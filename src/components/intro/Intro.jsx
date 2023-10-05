@@ -1,6 +1,7 @@
 import Button1 from "../ui/btns/button1/Button1";
+import Checkbox from "../ui/checkbox/Checkbox";
 import styles from "./Intro.module.scss";
-import classNames from "classnames";
+
 
 const Intro = () => {
   return (
@@ -23,26 +24,10 @@ const Intro = () => {
               </div>
             </div>
             <div className={styles.checkbox_container}>
-              <div className={styles.control__checkbox}>
-                <div
-                  className={classNames(
-                    styles.checkbox_active,
-                    styles.checkbox
-                  )}
-                ></div>
-              </div>
-              <div className={styles.control__checkbox}>
-                <div className={styles.checkbox}></div>
-              </div>
-              <div className={styles.control__checkbox}>
-                <div className={styles.checkbox}></div>
-              </div>
-              <div className={styles.control__checkbox}>
-                <div className={styles.checkbox}></div>
-              </div>
-              <div className={styles.control__checkbox}>
-                <div className={styles.checkbox}></div>
-              </div>
+              <Checkbox active={ true } />
+              <Checkbox />
+              <Checkbox />
+              <Checkbox />
             </div>
             <div className={styles.control__btn}>
               <div className={styles.btn__line_bottom}>
