@@ -1,0 +1,155 @@
+.container {
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 562px;
+}
+
+.banner {
+    background-image: url('../../assets//images/banner_form.jpg');
+}
+
+.form {
+    margin-top: 5px;
+    margin-right: 82px;
+    max-width: 524px;
+    margin-left: auto;
+}
+
+.title {
+    margin-bottom: 25px;
+    font-size: 60px;
+    color: #3E424B;
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+}
+
+.text {
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #3E424B;
+    line-height: 1.15;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+.label {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    color: #636B78;
+    font-family: 'Jost';
+    font-weight: 400;
+
+    & input {
+        margin-top: 8px;
+        max-width: 332px;
+        height: 70px;
+        outline: none;
+        border: none;
+        padding: 0 30px;
+
+        &::placeholder {
+            font-size: 17px;
+            color: #D0D0D0;
+            font-family: 'Jost';
+            font-weight: 400;
+        }
+    }
+}
+
+.label:last-child {
+    margin-bottom: 30px;
+}
+
+
+.label_checkbox {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #636B78;
+    font-family: 'Jost';
+    font-weight: 400;
+
+    & input {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}
+
+.button {
+    cursor: pointer;
+    width: 275px;
+    height: 70px;
+    outline: none;
+    border: none;
+    background-image: url('../../assets//icons/btn.svg');
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Jost';
+    font-weight: 400;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.comeback {
+    margin-left: 260px;
+    width: 262px;
+    height: 90px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover p {
+        color: #6f4f31;
+    }
+
+    &:hover div {
+        border: 1.5px solid #6f4f31;
+
+        & svg path {
+            fill: #6f4f31;
+
+        }
+    }
+
+    & p {
+        font-size: 17px;
+        color: #BB8C5F;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        transition: all .2s ease-in-out;
+    }
+
+    & div {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid #BB8C5F;
+        transition: all .2s ease-in-out;
+
+        & svg path {
+            transition: all .2s ease-in-out;
+        }
+    }
+}

@@ -5,6 +5,7 @@ import Banners from "../../components/banners/Banners";
 import Brands from "../../components/brands/Brands";
 import Info from "../../components/Info/Info";
 import Reviews from "../../components/reviews/Reviews";
+import Subscription from "../../components/subscriptin/Subscription";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Brands />
       <Info />
       <Reviews />
+      <Subscription />
     </main>
   );
 };
