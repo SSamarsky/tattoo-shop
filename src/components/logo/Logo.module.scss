@@ -1,0 +1,55 @@
+@import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
+
+.logo {
+    margin-top: 14px;
+    display: flex;
+    text-transform: uppercase;
+    color: $goldColor;
+    width: 192px;
+    flex-direction: column;
+
+    .logo__title {
+        width: 170px;
+        font-size: 30px;
+        font-family: $ForumFont;
+        font-weight: 400;
+        align-self: center;
+    }
+
+    .logo__subtitle {
+        margin-top: 3px;
+        align-self: center;
+        font-size: 14px;
+        font-family: $JostFont;
+        font-weight: 300;
+        letter-spacing: 3.5px;
+        line-height: 150%;
+    }
+
+    .logo__line {
+        height: 1.5px;
+        width: 190px;
+        background-color: $goldColor;
+        position: relative;
+
+        .line__arrow_left {
+            position: relative;
+            bottom: 1.5px;
+            height: 5px;
+            width: 5px;
+            background-color: $goldColor;
+            transform: rotate(45deg);
+        }
+
+        .line__arrow_right {
+            margin-left: auto;
+            position: relative;
+            bottom: 6.5px;
+            height: 5px;
+            width: 5px;
+            background-color: $goldColor;
+            transform: rotate(45deg);
+        }
+    }
+}

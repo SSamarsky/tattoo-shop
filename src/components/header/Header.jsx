@@ -1,6 +1,7 @@
 import styles from "./Header.module.scss";
 import SvgGenerator from "../../instruments/SvgGenerator";
 import classNames from "classnames";
+import Logo from "../logo/Logo";
 
 const Header = () => {
   return (
@@ -28,14 +29,7 @@ const Header = () => {
             </a>
           </div>
 
-          <div className={styles.logo}>
-            <h2 className={styles.logo__title}>MR. DRISKELL</h2>
-            <div className={styles.logo__line}>
-              <div className={styles.line__arrow_left}></div>
-              <div className={styles.line__arrow_right}></div>
-            </div>
-            <h3 className={styles.logo__subtitle}>Tattoo shop</h3>
-          </div>
+          <Logo />
 
           <div className={styles.profile}>
             <div className={styles.profile__cart}>
