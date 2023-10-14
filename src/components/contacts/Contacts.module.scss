@@ -1,0 +1,49 @@
+.contacts {
+    color: #FAF6F2;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+
+    .contacts__inner {
+        margin-bottom: 12px;
+        display: flex;
+        gap: 25px;
+
+        .phone {
+            display: flex;
+            align-items: center;
+
+            & svg {
+                margin-right: 10px;
+            }
+        }
+
+        .social {
+            display: flex;
+            gap: 12px;
+
+            & a {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #BB8C5F;
+            }
+        }
+    }
+
+    .info {
+        margin-bottom: 35px;
+        color: #636B78;
+        font-size: 17px;
+    }
+
+    .mail {
+        & svg {
+            margin-right: 17px;
+            position: relative;
+            left: 5px;
+        }
+    }
+}
