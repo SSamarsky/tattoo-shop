@@ -28,6 +28,7 @@ const Intro = () => {
               <Checkbox />
               <Checkbox />
               <Checkbox />
+              <Checkbox />
             </div>
             <div className={styles.control__btn}>
               <div className={styles.btn__line_bottom}>

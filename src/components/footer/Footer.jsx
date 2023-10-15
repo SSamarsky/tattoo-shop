@@ -5,6 +5,7 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <div className={styles.inner}>
       <div className={styles.footer__menu}>
         <div className={styles.logo}>
           <Logo />
@@ -17,20 +18,20 @@ const Footer = () => {
             <a href="#!">Промокоды</a>
           </li>
           <li>
-            <a href="#!">Скидки</a>
-          </li>
-          <li>
-            <a href="#!">Помощь</a>
-          </li>
-          <li>
             <a href="#!">О нас</a>
+          </li>
+          <li>
+            <a href="#!">Скидки</a>
           </li>
           <li>
             <a href="#!">Контакты</a>
           </li>
+          <li>
+            <a href="#!">Помощь</a>
+          </li>
         </ul>
       </div>
-      <svg
+      <svg className={styles.line}
         xmlns="http://www.w3.org/2000/svg"
         width="6"
         height="400"
@@ -42,7 +43,10 @@ const Footer = () => {
           fill="#524336"
         />
       </svg>
-      <Contacts />
+      <div className={styles.contacts}>
+        <Contacts />
+      </div>
+      </div>
     </footer>
   );
 };

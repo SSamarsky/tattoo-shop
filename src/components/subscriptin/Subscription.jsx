@@ -31,20 +31,21 @@ const Subscription = () => {
             </button>
           </form>
         </div>
-        <div className={styles.banner}></div>
-      </div>
-      <div className={styles.comeback}>
-        <p>Вернуться вверх</p>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path d="M12 6L6.2265 16L17.7735 16L12 6Z" fill="#BB8C5F" />
-          </svg>
+        <div className={styles.banner}>
+          <div className={styles.comeback}>
+            <p>Вернуться вверх</p>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path d="M12 6L6.2265 16L17.7735 16L12 6Z" fill="#BB8C5F" />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>

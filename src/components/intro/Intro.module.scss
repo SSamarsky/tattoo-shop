@@ -2,7 +2,7 @@
 @import '../../styles/fonts.scss';
 
 .intro {
-    height: 685px;
+    height: 700px;
     background-color: #000;
     background-image: url("../../assets/images/intro.jpg");
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 }
 
 .info {
-    padding-top: 98px;
+    padding-top: 110px;
     max-width: 594px;
 
     .info__title {
@@ -46,12 +46,12 @@
 }
 
 .slide_control {
-    padding-top: 142px;
+    padding-top: 155px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 40px;
-    height: 324px;
+    
 
     .control__btn {
         position: relative;
@@ -109,6 +109,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 13px;
+        gap: 15px;
     }
 }

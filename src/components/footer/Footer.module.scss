@@ -1,39 +1,55 @@
 .footer {
     height: 400px;
     background-color: #050402;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     color: #FAF6F2;
     font-size: 20px;
-    font-style: 'Jost' sans;
+    font-style: 'Jost' sans-serif;
+}
+
+.inner {
+    height: 100%;
+    display: flex;
 }
 
 .footer__menu {
     height: 141px;
-    // padding-top: 139px;
-    // margin-right: 86px;
+    padding-top: 139px;
+    margin-left: 152px;
+    margin-right: 102px;
     display: flex;
 }
 
+.contacts {
+    padding-top: 129px;
+    margin-left: 98px;
+}
+
 .menu {
-    max-height: 180px;
+    max-height: 141px;
     width: 306px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 28px;
+
+    & li a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-right: 50px;
+    }
 }
 
 .logo {
-    margin-right: 71px;
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
-    gap: 52px;
+    gap: 60px;
     
 }
 
 .link {
+    width: 240px;
+    margin-right: 71px;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }

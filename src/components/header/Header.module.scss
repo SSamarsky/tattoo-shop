@@ -16,7 +16,8 @@
 }
 
 .header__info {
-    padding: 8px 0 14px;
+    padding-top: 15px;
+    margin-bottom: 12px;
     display: flex;
     height: 66px;
     align-items: center;
@@ -116,7 +117,7 @@
 
         .cart__count {
             position: absolute;
-            bottom: 25px;
+            bottom: 27px;
             left: 32px;
             text-align: center;
             line-height: 21px;
@@ -129,18 +130,18 @@
 
 .header__menu {
     height: 55px;
-    padding-top: 13px;
+    margin-top: 4px;
     display: flex;
 
     .menu__control {
         display: flex;
-        gap: 60px;
+        gap: 62px;
     }
 }
 
 .control {
     display: flex;
-    gap: 10px;
+    gap: 11px;
     align-items: center;
 
     & .control__title {
@@ -160,7 +161,7 @@
     }
 
     .control__title {
-        margin-top: -5px;
+        margin-top: -8px;
         font-size: 25px;
         font-family: $JostFont;
         font-weight: 400;
@@ -168,7 +169,8 @@
     }
 
     .burger {
-        width: 28px;
+        margin-top: -5px;
+        width: 24px;
         display: flex;
         flex-direction: column;
         gap: 4px;
@@ -187,7 +189,7 @@
 
     .search__input {
         padding-left: 54px;
-        width: 364px;
+        width: 418px;
         height: 44px;
         background-color: transparent;
         border: 1px solid $brownColor;
@@ -220,34 +222,5 @@
                 color: #bb8c5f;
             }
         }
-    }
-}
-
-
-.header__line {
-    height: 1.5px;
-    width: 100%;
-    background-color: $brownColor;
-
-    .line__arrow_left {
-        position: relative;
-        bottom: 1.5px;
-        width: 0;
-        height: 0;
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid transparent;
-        border-left: 8px solid $brownColor;
-    }
-
-    .line__arrow_right {
-        margin-left: auto;
-        position: relative;
-        bottom: 6.5px;
-        width: 0;
-        height: 0;
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid transparent;
-        border-left: 8px solid $brownColor;
-        transform: rotate(180deg);
     }
 }
