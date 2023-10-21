@@ -2,133 +2,132 @@
 @import '../../styles/fonts.scss';
 
 .header {
-    height: 160px;
-    background-color: #000;
+    background-color: #050402;
     color: $whiteColor;
-    font-size: 15px;
     font-family: $JostFont;
 
     .container {
-        max-width: 1216px;
-        height: 100%;
+        width: 100%;
+        padding: 0 20px;
         margin: 0 auto;
+        max-width: 1256px;
     }
 }
 
-.header__info {
-    padding-top: 15px;
-    margin-bottom: 12px;
+.header__up {
     display: flex;
-    height: 66px;
     align-items: center;
-}
+    font-size: 15px;
 
-.contacts {
-    margin-right: 142px;
-    padding-top: 15px;
-    display: flex;
-    gap: 56px;
-
-    .contact {
+    .contacts {
+        margin-right: 11.5%;
+        padding-top: 17px;
         display: flex;
-        align-items: center;
-        gap: 10px;
-        transition: all .2s ease;
-        cursor: pointer;
+        gap: 56px;
 
-        & svg {
+        .contacts__item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             transition: all .2s ease;
-        }
-
-        & svg path {
-            transition: all .2s ease;
-        }
-
-        &:hover {
-            stroke: $goldColor;
-            color: $goldColor;
-        }
-
-        &:hover svg {
-            stroke: $goldColor;
-        }
-
-        &:hover svg path {
-            stroke: $goldColor;
-        }
-    }
-
-    .contact_fix {
-        padding-top: 15px;
-    }
-
-    .messengers {
-        margin-right: 5px;
-        display: flex;
-        font-size: 12px;
-        justify-content: space-between;
-        gap: 10px;
-
-        .messenger_active {
-            color: $goldColor;
-        }
-    }
-}
-
-.profile {
-    margin-left: auto;
-    margin-top: 24px;
-    display: flex;
-
-    & div {
-        margin-left: 50px;
-
-        & svg {
             cursor: pointer;
 
-            & path {
+            & svg {
                 transition: all .2s ease;
             }
 
-            & circle {
+            & svg path {
                 transition: all .2s ease;
+            }
+
+            &:hover {
+                stroke: $goldColor;
+                color: $goldColor;
+            }
+
+            &:hover svg {
+                stroke: $goldColor;
+            }
+
+            &:hover svg path {
+                stroke: $goldColor;
             }
         }
 
-        & svg:hover path {
-            stroke: $goldColor;
+        .contacts__item_fix {
+            padding-top: 15px;
         }
 
-        & svg:hover circle {
-            stroke: $goldColor;
+        .messengers {
+            margin-right: 5px;
+            display: flex;
+            font-size: 12px;
+            justify-content: space-between;
+            gap: 10px;
+
+            .active {
+                color: $goldColor;
+            }
         }
     }
 
-    .profile__cart {
+    .profile {
+        margin-left: auto;
+        margin-top: 24px;
         display: flex;
-        gap: 5px;
-        position: relative;
 
-        & span {
-            font-size: 15px;
-            line-height: 1.5;
-            margin-top: 5px;
+        & div {
+            margin-left: 50px;
+
+            & svg {
+                cursor: pointer;
+
+                & path {
+                    transition: all .2s ease;
+                }
+
+                & circle {
+                    transition: all .2s ease;
+                }
+            }
+
+            & svg:hover path {
+                stroke: $goldColor;
+            }
+
+            & svg:hover circle {
+                stroke: $goldColor;
+            }
         }
 
-        .cart__count {
-            position: absolute;
-            bottom: 27px;
-            left: 32px;
-            text-align: center;
-            line-height: 21px;
-            width: 24px;
-            height: 21px;
-            background-color: $goldColor;
+        .cart {
+            display: flex;
+            gap: 5px;
+            position: relative;
+
+            & span {
+                font-size: 15px;
+                line-height: 1.5;
+                margin-top: 5px;
+            }
+
+            .count {
+                position: absolute;
+                bottom: 27px;
+                left: 32px;
+                text-align: center;
+                line-height: 21px;
+                width: 24px;
+                height: 21px;
+                background-color: $goldColor;
+            }
         }
     }
+
 }
 
-.header__menu {
+
+.down {
     height: 55px;
     margin-top: 4px;
     display: flex;

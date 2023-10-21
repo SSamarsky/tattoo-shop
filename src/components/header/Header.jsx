@@ -2,16 +2,20 @@ import styles from "./Header.module.scss";
 import SvgGenerator from "../../instruments/SvgGenerator";
 import classNames from "classnames";
 import Logo from "../logo/Logo";
+import UserInterface from "./userInterface/UserInterface";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.header__info}>
+        <div className={styles.header__up}>
           <div className={styles.contacts}>
             <div>
               <a
-                className={classNames(styles.contact, styles.contact_fix)}
+                className={classNames(
+                  styles.contacts__item,
+                  styles.contacts__item_fix
+                )}
                 href="tel:+79525525252"
               >
                 <SvgGenerator name={"call"} />
@@ -19,11 +23,14 @@ const Header = () => {
               </a>
               <div className={styles.messengers}>
                 <div>Viber</div>
-                <div className={styles.messenger_active}>Whats App</div>
+                <div className={styles.active}>Whats App</div>
                 <div>Telegram</div>
               </div>
             </div>
-            <a className={styles.contact} href="mailto:mr.driskell@mail.ru">
+            <a
+              className={styles.contacts__item}
+              href="mailto:mr.driskell@mail.ru"
+            >
               <SvgGenerator name={"mail"} />
               Mr.Driskell@mail.ru
             </a>
@@ -31,24 +38,11 @@ const Header = () => {
 
           <Logo />
 
-          <div className={styles.profile}>
-            <div className={styles.profile__cart}>
-              <span>37 280</span>
-              <span>₽</span>
-              <SvgGenerator name="cart" />
-              <div className={styles.cart__count}>17</div>
-            </div>
-            <div>
-              <SvgGenerator name="heart" />
-            </div>
-            <div>
-              <SvgGenerator name="profile" />
-            </div>
-          </div>
+          <UserInterface />
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="1216"
+          width="100%"
           height="6"
           viewBox="0 0 1216 6"
           fill="none"
@@ -59,7 +53,7 @@ const Header = () => {
           />
         </svg>
 
-        <div className={styles.header__menu}>
+        <div className={styles.down}>
           <div className={styles.menu__control}>
             <div className={styles.control}>
               <div className={styles.control__title}>Каталог</div>

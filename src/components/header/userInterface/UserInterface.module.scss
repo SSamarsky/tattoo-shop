@@ -1,0 +1,50 @@
+.container {
+    margin-top: 20px;
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+
+    a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+
+        .item__price {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .item__label {
+            width: 24px;
+            height: 21px;
+            position: absolute;
+            bottom: 20px;
+            right: -12px;
+            text-align: center;
+            line-height: 21px;
+            font-size: 14px;
+            background-color: #BB8C5F;
+        }
+
+        & svg {
+            cursor: pointer;
+
+            & path,
+            circle {
+                transition: all .2s ease;
+            }
+
+            &:hover path {
+                fill: #BB8C5F;
+            }
+        }
+
+        &:last-child:hover path,
+        &:last-child:hover circle {
+            fill: none;
+            stroke: #BB8C5F;
+        }
+    }
+}
