@@ -1,44 +1,22 @@
 import styles from "./Header.module.scss";
-import SvgGenerator from "../../instruments/SvgGenerator";
-import classNames from "classnames";
 import Logo from "../logo/Logo";
 import UserInterface from "./userInterface/UserInterface";
+import Navigation from "./navigation/Navigation";
+import ContactsHeader from "./contactsHeader/ContactsHeader";
+import Search from "./search/Search";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.header__up}>
-          <div className={styles.contacts}>
-            <div>
-              <a
-                className={classNames(
-                  styles.contacts__item,
-                  styles.contacts__item_fix
-                )}
-                href="tel:+79525525252"
-              >
-                <SvgGenerator name={"call"} />
-                +7 952 552-52-52
-              </a>
-              <div className={styles.messengers}>
-                <div>Viber</div>
-                <div className={styles.active}>Whats App</div>
-                <div>Telegram</div>
-              </div>
-            </div>
-            <a
-              className={styles.contacts__item}
-              href="mailto:mr.driskell@mail.ru"
-            >
-              <SvgGenerator name={"mail"} />
-              Mr.Driskell@mail.ru
-            </a>
+          <div className={styles.up__left}>
+            <ContactsHeader />
+            <Logo />
           </div>
-
-          <Logo />
-
-          <UserInterface />
+          <div className={styles.up__right}>
+            <UserInterface />
+          </div>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +31,7 @@ const Header = () => {
           />
         </svg>
 
-        <div className={styles.down}>
+        <div className={styles.header__down}>
           <div className={styles.menu__control}>
             <div className={styles.control}>
               <div className={styles.control__title}>Каталог</div>
@@ -63,22 +41,9 @@ const Header = () => {
                 <div></div>
               </div>
             </div>
-            <div className={styles.search}>
-              <input className={styles.search__input} placeholder="Поиск" />
-              <span className={styles.search__icon}>
-                <SvgGenerator name="search" />
-              </span>
-            </div>
+          <Search />
           </div>
-          <nav className={styles.navigation}>
-            <ul>
-              <li>Промокоды</li>
-              <li>Скидки</li>
-              <li>Помощь</li>
-              <li>О нас</li>
-              <li>Контакты</li>
-            </ul>
-          </nav>
+          <Navigation />
         </div>
       </div>
     </header>

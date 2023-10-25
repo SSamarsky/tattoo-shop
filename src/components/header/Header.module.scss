@@ -1,6 +1,7 @@
 @import '../../styles/colors.scss';
 @import '../../styles/fonts.scss';
 
+
 .header {
     background-color: #050402;
     color: $whiteColor;
@@ -18,124 +19,37 @@
     display: flex;
     align-items: center;
     font-size: 15px;
+    justify-content: space-between;
+}
 
-    .contacts {
-        margin-right: 11.5%;
-        padding-top: 17px;
-        display: flex;
-        gap: 56px;
+.up__left {
+    margin-right: 40px;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
 
-        .contacts__item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: all .2s ease;
-            cursor: pointer;
-
-            & svg {
-                transition: all .2s ease;
-            }
-
-            & svg path {
-                transition: all .2s ease;
-            }
-
-            &:hover {
-                stroke: $goldColor;
-                color: $goldColor;
-            }
-
-            &:hover svg {
-                stroke: $goldColor;
-            }
-
-            &:hover svg path {
-                stroke: $goldColor;
-            }
-        }
-
-        .contacts__item_fix {
-            padding-top: 15px;
-        }
-
-        .messengers {
-            margin-right: 5px;
-            display: flex;
-            font-size: 12px;
-            justify-content: space-between;
-            gap: 10px;
-
-            .active {
-                color: $goldColor;
-            }
-        }
-    }
-
-    .profile {
-        margin-left: auto;
-        margin-top: 24px;
-        display: flex;
-
-        & div {
-            margin-left: 50px;
-
-            & svg {
-                cursor: pointer;
-
-                & path {
-                    transition: all .2s ease;
-                }
-
-                & circle {
-                    transition: all .2s ease;
-                }
-            }
-
-            & svg:hover path {
-                stroke: $goldColor;
-            }
-
-            & svg:hover circle {
-                stroke: $goldColor;
-            }
-        }
-
-        .cart {
-            display: flex;
-            gap: 5px;
-            position: relative;
-
-            & span {
-                font-size: 15px;
-                line-height: 1.5;
-                margin-top: 5px;
-            }
-
-            .count {
-                position: absolute;
-                bottom: 27px;
-                left: 32px;
-                text-align: center;
-                line-height: 21px;
-                width: 24px;
-                height: 21px;
-                background-color: $goldColor;
-            }
-        }
-    }
-
+.up__right {
+    display: flex;
+    flex-basis: end;
+    width: 100%;
+    max-width: 250px;
 }
 
 
-.down {
+.header__down {
     height: 55px;
     margin-top: 4px;
     display: flex;
 
-    .menu__control {
-        display: flex;
-        gap: 62px;
-    }
+    
+}
+
+.menu__control {
+    width: 616px;
+    display: flex;
+    gap: 62px;
 }
 
 .control {
@@ -182,44 +96,13 @@
     }
 }
 
-.search {
-    display: flex;
-    position: relative;
 
-    .search__input {
-        padding-left: 54px;
-        width: 418px;
-        height: 44px;
-        background-color: transparent;
-        border: 1px solid $brownColor;
-        font-size: 15px;
-        color: $grayColor;
-        line-height: 44px;
+@media (max-width: 950px) {
+    .up__left {
+        margin-right: 0px;
     }
 
-    .search__icon {
-        position: absolute;
-        left: 16px;
-        top: 8px;
-    }
-}
-
-.navigation {
-    margin-left: auto;
-    margin-top: 10px;
-
-    & ul {
-        display: flex;
-        gap: 60px;
-
-        & li {
-            cursor: pointer;
-            font-size: 17px;
-            transition: all .2s ease;
-
-            &:hover {
-                color: #bb8c5f;
-            }
-        }
+    .menu__control {
+        gap: 30px;
     }
 }

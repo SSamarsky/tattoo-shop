@@ -1,0 +1,57 @@
+.contacts {
+    margin-right: 40px;
+    padding-top: 17px;
+    display: flex;
+    gap: 56px;
+
+    .contacts__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all .2s ease;
+        cursor: pointer;
+
+        & svg {
+            transition: all .2s ease;
+        }
+
+        & svg path {
+            transition: all .2s ease;
+        }
+
+        &:hover {
+            stroke: #BB8C5F;
+            color: #BB8C5F;
+        }
+
+        &:hover svg {
+            stroke: #BB8C5F;
+        }
+
+        &:hover svg path {
+            stroke: #BB8C5F;
+        }
+    }
+
+    .contacts__item_fix {
+        padding-top: 15px;
+    }
+
+    .messengers {
+        margin-right: 5px;
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        gap: 10px;
+
+        .active {
+            color: #BB8C5F;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contacts {
+        gap: 30px;
+    }
+}

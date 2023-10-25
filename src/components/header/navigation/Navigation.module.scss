@@ -1,0 +1,31 @@
+.nav {
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 60px;
+
+    .list__item {
+        cursor: pointer;
+        font-size: 17px;
+        transition: all .2s ease;
+
+        &:hover {
+            color: #bb8c5f;
+        }
+    }
+}
+
+@media (max-width: 1230px)  {
+    .nav__list {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 970px)  {
+    .nav__list {
+        gap: 20px;
+    }
+}
