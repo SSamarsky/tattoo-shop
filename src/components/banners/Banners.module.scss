@@ -67,3 +67,23 @@
     bottom: 50px;
     left: 50px;
 }
+
+@media (max-width: 1245px) {
+    .banners {
+        height: 370px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1045px) {
+    .banners {
+        height: 300px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}

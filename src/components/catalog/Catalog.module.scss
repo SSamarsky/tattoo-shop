@@ -1,8 +1,9 @@
 @import '../../styles/fonts.scss';
 
 .container {
+    padding: 0 20px;
     margin: 0 auto;
-    width: 1217px;
+    max-width: 1257px;
     padding-bottom: 120px;
 }
 
@@ -19,6 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 
     .item {
         background-color: #F5F5F5;

@@ -1,6 +1,7 @@
 .brands {
+    padding: 0 20px;
     margin: 115px auto 120px;
-    width: 1376px;
+    max-width: 1376px;
     position: relative;
 }
 
@@ -47,7 +48,7 @@
 
 .slider {
     display: flex;
-    height: 204px;
+    min-height: 204px;
     align-items: center;
     justify-content: space-between;
 }
@@ -57,6 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: center;
 }
 
 .item {

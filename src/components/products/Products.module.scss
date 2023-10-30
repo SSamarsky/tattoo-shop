@@ -2,9 +2,10 @@
 @import '../../styles/fonts.scss';
 
 .container {
+    padding: 0 20px;
     padding-top: 115px;
     padding-bottom: 120px;
-    width: 1216px;
+    max-width: 1256px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@
     margin-bottom: 35px;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    column-gap: 60px;
     flex-wrap: wrap;
 
     .nav__item {
@@ -64,4 +65,26 @@
     gap: 20px;
     margin-bottom: 50px;
     position: relative;
+    justify-content: center;
 }
+
+
+@media (max-width: 1250px) {
+    .nav {
+        gap: 24px;
+
+        .nav__item {
+            font-size: 26px;
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .nav {
+        .nav__item {
+            font-size: 20px;
+        }
+    }
+}
+
+
