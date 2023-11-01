@@ -28,8 +28,8 @@ const Products = () => {
                 </li>
             </ul>
             <div className={styles.cards}>
-                {products.map(el => {
-                    return <Card data={el} />;
+                {products.map((el, i) => {
+                    return <Card data={el} key={i} />;
                 })}
             </div>
             <Button2 text={'Показать ещё'}/>

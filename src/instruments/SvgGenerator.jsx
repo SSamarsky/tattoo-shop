@@ -103,9 +103,9 @@ const SvgGenerator = ({ name }) => {
               width="36"
               height="36"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -149,16 +149,16 @@ const SvgGenerator = ({ name }) => {
             rx="7.86499"
             ry="7.86499"
             stroke="#636B78"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M19.3353 19.7437L22.4188 22.8192"
             stroke="#636B78"
-            stroke-width="1.5"
-            stroke-linecap="square"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="square"
+            strokeLinejoin="round"
           />
         </svg>
       );
@@ -175,7 +175,7 @@ const SvgGenerator = ({ name }) => {
             d="M16 17.5V1H259V17.5V26.25V26.8244L259.496 27.1138L273.015 35L259.496 42.8862L259 43.1756V43.75V52.5V69H16V52.5V43.75V43.1756L15.5039 42.8862L1.98463 35L15.5039 27.1138L16 26.8244V26.25V17.5Z"
             fill="#524336"
             stroke="#BB8C5F"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
       );
@@ -192,7 +192,7 @@ const SvgGenerator = ({ name }) => {
             d="M16 17.5V1H259V17.5V26.25V26.8244L259.496 27.1138L273.015 35L259.496 42.8862L259 43.1756V43.75V52.5V69H16V52.5V43.75V43.1756L15.5039 42.8862L1.98463 35L15.5039 27.1138L16 26.8244V26.25V17.5Z"
             fill="#EEEEEE"
             stroke="#BB8C5F"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
       );
