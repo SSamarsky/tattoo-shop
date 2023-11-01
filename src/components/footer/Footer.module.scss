@@ -1,5 +1,5 @@
 .footer {
-    height: 400px;
+    min-height: 400px;
     background-color: #050402;
     color: #FAF6F2;
     font-size: 20px;
@@ -12,7 +12,6 @@
 }
 
 .footer__menu {
-    height: 141px;
     padding-top: 139px;
     margin-left: 152px;
     margin-right: 102px;
@@ -52,4 +51,35 @@
     margin-right: 71px;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.line__hor {
+    display: none;
+}
+
+@media (max-width: 1360px) {
+    .inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .footer__menu {
+        margin-bottom: 70px;
+    }
+
+    .contacts {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-left: 0px;
+    }
+
+    .line__hor {
+        width: 100%;
+        display: block;
+    }
 }
