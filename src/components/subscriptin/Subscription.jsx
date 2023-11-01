@@ -1,6 +1,10 @@
 import styles from "./Subscription.module.scss";
 
 const Subscription = () => {
+  const foo = () => {
+    window.scrollTo(0, 0);
+    return;
+  }
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
@@ -32,7 +36,7 @@ const Subscription = () => {
           </form>
         </div>
         <div className={styles.banner}>
-          <div className={styles.comeback}>
+          <div className={styles.comeback} onClick={foo}>
             <p>Вернуться вверх</p>
             <div>
               <svg
