@@ -1,10 +1,8 @@
 import styles from "./Subscription.module.scss";
 
 const Subscription = () => {
-  const foo = () => {
-    window.scrollTo(0, 0);
-    return;
-  }
+  const foo = () => window.scrollTo(0, 0);
+
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
