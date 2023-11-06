@@ -1,9 +1,10 @@
 import styles from './btnOfSlider.module.scss';
+import classNames from 'classnames';
 
 
 const BtnOfSlider = ({ direction }) => {
     return (
-        <button className={styles.btn}>
+        <button className={classNames(styles.btn, direction === 'left' ? styles.left : styles.right)}>
             {
                 direction === 'left' ? 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

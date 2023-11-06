@@ -1,4 +1,5 @@
 .btn {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,8 +8,17 @@
     border: 1.5px solid #BB8C5F;
     cursor: pointer;
     transition: all .2s ease;
+    z-index: 10;
 }
 
 .btn:hover {
     opacity: .8;
+}
+
+.left {
+    right: 10px;
+}
+
+.right {
+    left: 10px;
 }

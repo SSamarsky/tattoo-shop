@@ -1,0 +1,37 @@
+.contact {
+    margin-left: 50px;
+    margin-bottom: 53px;
+    display: flex;
+    gap: 15px;
+    align-items: baseline;
+    color: #BB8C5F;
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border: 1px solid #BB8C5F;
+    }
+
+    .nickname {
+        font-size: 20px;
+        font-family: 'Forum', sans-serif;
+        font-weight: 400;
+    }
+}
+
+.behind {
+    margin-left: 35px;
+    gap: 11px;
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nickname {
+        font-size: 14.4px;
+    }
+}

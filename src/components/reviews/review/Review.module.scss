@@ -1,15 +1,15 @@
 .slider__item {
     position: relative;
     width: 598px;
-    height: 400px;
+    height: 397px;
     padding-top: 40px;
 
     .photo {
         position: absolute;
         top: -10px;
         left: 50px;
-        width: 80px;
-        height: 80px;
+        width: 13.5%;
+        height: 20.5%;
         border: 3px solid #BC946D;
         background-color: #fff;
         background-position-x: -5px;
@@ -17,52 +17,29 @@
     };
 
     .review {
+        width: 100%;
         position: relative;
         background-color: #000;
-        height: 86%;
+        height: 86.6%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         .text {
             width: 82%;
-            margin: 50px 50px 33px 50px;
+            margin: 52px 50px 33px 50px;
             font-size: 17px;
             font-family: 'Jost', sans-serif;
             line-height: 1.4;
             color: #D0D0D0;
         }
-
-        .contact {
-            margin-left: 50px;
-            margin-bottom: 53px;
-            display: flex;
-            gap: 15px;
-            align-items: baseline;
-            color: #BB8C5F;
-
-            .icon {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 28px;
-                height: 28px;
-                border: 1px solid #BB8C5F;
-            }
-
-            .nickname {
-                font-size: 20px;
-                font-family: 'Forum', sans-serif;
-                font-weight: 400;
-            }
-        }
     }
 }
 
 .line {
+    width: 100%;
     position: absolute;
     z-index: 1;
-    width: 100%;
 }
 
 .line_top {
@@ -71,4 +48,35 @@
 
 .line_bottom {
     bottom: -6px;
+}
+
+.behind {
+    position: relative;
+    opacity: .3;
+    height: 297px;
+    width: 430px;
+
+    .photo {
+        position: absolute;
+        top: 0px;
+        left: 36px;
+        background-position: center;
+        background-size: cover;
+    };
+
+    .review {
+        .text {
+            margin: 35.59px 35.59px 41px 35.59px;
+            font-size: 12.24px;
+        }
+    }
+
+}
+
+.left {
+    left: 40px;
+}
+
+.right {
+    right: 40px;
 }

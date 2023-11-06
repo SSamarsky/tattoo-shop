@@ -6,6 +6,8 @@ body {
   margin: 0;
   font-family: 'Jost', sans-serif;
   background-color: #eee;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 * {
