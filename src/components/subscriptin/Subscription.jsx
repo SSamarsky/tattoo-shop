@@ -21,10 +21,10 @@ const Subscription = () => {
               Имя
               <input type="name" placeholder={"Введите имя"} />
             </label>
-            <label className={styles.label_checkbox}>
-              <input type="checkbox" />
-              Вы соглашаетесь на обработку ваших персональных данных
-            </label>
+            <div className={styles.checkbox}>
+              <input id="conditions" className={styles.checkbox__input} type="checkbox" />
+              <label for="conditions">Вы соглашаетесь на обработку ваших персональных данных</label>
+            </div>
             <button
               className={styles.button}
               onClick={(e) => e.preventDefault()}
