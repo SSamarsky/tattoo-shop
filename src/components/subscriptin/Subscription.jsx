@@ -23,7 +23,7 @@ const Subscription = () => {
             </label>
             <div className={styles.checkbox}>
               <input id="conditions" className={styles.checkbox__input} type="checkbox" />
-              <label for="conditions">Вы соглашаетесь на обработку ваших персональных данных</label>
+              <label htmlFor="conditions">Вы соглашаетесь на обработку ваших персональных данных</label>
             </div>
             <button
               className={styles.button}

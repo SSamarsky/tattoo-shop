@@ -10,11 +10,15 @@ const Reviews = () => {
       <h2 className={styles.title}>Отзывы</h2>
       <div className={styles.slider}>
         <Review num={0} behind={true} position={'left'} />
-        <BtnOfSlider direction={'left'} />
+        <div className={styles.btn__left}>
+          <BtnOfSlider direction={'left'} />
+        </div>
         { Array(2).fill(0).map((el, i) => {
           return <Review key={i} num={i} />
         }) }
-        <BtnOfSlider direction={'right'} />
+        <div className={styles.btn__right}>
+          <BtnOfSlider direction={'right'} />
+        </div>
         <Review num={1} behind={true} position={'right'} />
       </div>
       <div className={styles.buttons}>

@@ -32,7 +32,7 @@
 
 .title_left {
     margin-top: 40px;
-    left: 153px;
+    left: 160px;
 }
 
 .title_right {
@@ -42,30 +42,35 @@
 }
 
 .button {
-    max-width: max-content;
     position: absolute;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    bottom: 50px;
 }
 
 .button:hover {
     opacity: .7;
 }
 
+.button svg {
+    position: absolute;
+    bottom: -2px;
+    left: -4px;
+}
+
 .link {
     color: #BB8C5F;
     font-family: 'Jost', sans-serif;
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 .button_left {
-    bottom: 50px;
-    left: 153px;
+    left: 165px;
 }
 
 .button_right {
-    bottom: 50px;
-    left: 50px;
+    left: 53px;
 }
 
 @media (max-width: 1245px) {
