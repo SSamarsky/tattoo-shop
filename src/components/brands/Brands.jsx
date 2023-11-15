@@ -1,7 +1,14 @@
+import React from "react";
 import BtnOfSlider from "../ui/btns/btnOfSlider/btnOfSlider";
 import styles from "./Brands.module.scss";
 
 const Brands = () => {
+  const [widthWindow, setWidthWindow] = React.useState();
+
+  React.useEffect(() => {
+    window.onresize = () => {setWidthWindow(window.screen.width)};
+    return () => {window.onresize = false};
+}, [widthWindow]);
   return (
     <div className={styles.brands}>
       <h2 className={styles.title}>Популятрные бренды</h2>
@@ -9,7 +16,7 @@ const Brands = () => {
       <div className={styles.slider}>
         <BtnOfSlider direction={"left"} />
         <div className={styles.items}>
-          {Array(10)
+          {Array(widthWindow > 1360 ? 10 : widthWindow > 1150 ? 8 : 6)
             .fill("img")
             .map((el, id) => {
               let s = `images/brands/${id + 1}.png`;
