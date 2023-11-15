@@ -1,6 +1,5 @@
 import BtnOfSlider from "../ui/btns/btnOfSlider/btnOfSlider";
 import styles from "./Brands.module.scss";
-import classNames from "classnames";
 
 const Brands = () => {
   return (
