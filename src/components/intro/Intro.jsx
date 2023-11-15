@@ -1,6 +1,6 @@
-import Button1 from "../ui/btns/button1/Button1";
 import Checkbox from "../ui/checkbox/Checkbox";
 import styles from "./Intro.module.scss";
+import Button2 from "../ui/btns/button/Button";
 
 
 const Intro = () => {
@@ -15,7 +15,7 @@ const Intro = () => {
             <p className={styles.info__text}>
               Оборудование и расходники для самых ярких и качественных работ
             </p>
-            <Button1 text={"Смотреть каталог"} />
+            <Button2 type={1} text={'Смотреть каталог'}/>
           </div>
           <div className={styles.slide_control}>
             <div className={styles.control__btn}>

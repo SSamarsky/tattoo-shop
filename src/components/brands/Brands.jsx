@@ -3,7 +3,7 @@ import BtnOfSlider from "../ui/btns/btnOfSlider/btnOfSlider";
 import styles from "./Brands.module.scss";
 
 const Brands = () => {
-  const [widthWindow, setWidthWindow] = React.useState();
+  const [widthWindow, setWidthWindow] = React.useState(window.screen.width);
 
   React.useEffect(() => {
     window.onresize = () => {setWidthWindow(window.screen.width)};

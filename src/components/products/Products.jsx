@@ -1,7 +1,7 @@
 import Card from '../card/Card';
 import styles from './Products.module.scss';
 import products from '../../assets/data/products.js';
-import Button2 from '../ui/btns/button2/Button2';
+import Button from '../ui/btns/button/Button';
 import BottomLine from '../ui/bottomLine/BottomLine';
 import classNames from 'classnames';
 
@@ -32,7 +32,7 @@ const Products = () => {
                     return <Card data={el} key={i} />;
                 })}
             </div>
-            <Button2 text={'Показать ещё'}/>
+            <Button text={'Показать ещё'}/>
         </div>
     );
 }

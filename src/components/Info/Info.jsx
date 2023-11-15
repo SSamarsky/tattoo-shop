@@ -1,4 +1,4 @@
-import Button2 from "../ui/btns/button2/Button2";
+import Button2 from "../ui/btns/button/Button";
 import styles from "./Info.module.scss";
 
 const Info = () => {
@@ -24,7 +24,7 @@ const Info = () => {
           раскрыть ваш потенциал.
         </p>
         <div className={styles.button}>
-            <Button2 text={"О компании"} />
+            <Button2 type={2} text={"О компании"} />
         </div>
         
       </div>

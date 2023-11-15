@@ -6,7 +6,7 @@ import Review from "./review/Review";
 
 
 const Reviews = () => {
-  const [widthWindow, setWidthWindow] = React.useState();
+  const [widthWindow, setWidthWindow] = React.useState(window.screen.width);
 
   React.useEffect(() => {
     window.onresize = () => {setWidthWindow(window.screen.width)};

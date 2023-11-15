@@ -143,24 +143,6 @@
     opacity: 0;
 }
 
-.button {
-    cursor: pointer;
-    width: 275px;
-    height: 70px;
-    outline: none;
-    border: none;
-    background-image: url('../../assets//icons/btn.svg');
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Jost';
-    font-weight: 400;
-    transition: all .2s ease-in-out;
-
-    &:hover {
-        opacity: .9;
-    }
-}
-
 .comeback {
     margin-top: 323px;
     margin-left: 311px;
