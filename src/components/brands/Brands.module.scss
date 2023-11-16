@@ -39,7 +39,8 @@
 }
 
 .items {
-    width: 1216px;
+    position: relative;
+    max-width: 1216px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -55,4 +56,15 @@
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.line__hor {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-7px);
+    width: 100% ;
+}
+
+.line__ver {
+    position: absolute;
 }
