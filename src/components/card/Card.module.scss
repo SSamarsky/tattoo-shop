@@ -2,6 +2,7 @@
 @import '../../styles/fonts.scss';
 
 .card {
+    margin-top: 20px;
     padding-top: 15px;
     width: 289px;
     min-height: 384px;
@@ -9,7 +10,7 @@
     cursor: pointer;
     transition: all .3s ease-in-out;
     position: relative;
-    z-index: 1;
+    z-index: 100;
 
     .img {
         width: 100%;
@@ -53,10 +54,75 @@
     }
 
     .price {
+        margin-bottom: 20px;
         padding: 0 30px;
         color: $goldColor;
         font-size: 24px;
         font-weight: 600;
         font-family: $JostFont;
     }
+}
+
+.card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F5F5F5;
+    transition: 0.35s;
+    z-index: -10;
+}
+
+.card:hover {
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.card:hover:after {
+    top: -25px;
+    bottom: -45px;
+    z-index: -10;
+}
+
+.button,
+.button:focus {
+    position: absolute;
+    z-index: 100;
+    left: 15px;
+    width: max-content;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+.card:hover button {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.button svg text {
+    fill: #BB8C5F;
+    font-weight: 300;
+    font-family: "Jost";
+    font-weight: 400;
+}
+
+.button svg,
+.button svg text,
+.button svg path {
+    transition: all .3s ease;
+}
+
+.button svg:hover path {
+    fill: $goldColor;
+}
+
+.button svg:hover text {
+    fill: $whiteColor;
 }
