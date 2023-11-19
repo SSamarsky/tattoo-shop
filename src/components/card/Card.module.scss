@@ -7,7 +7,6 @@
     width: 289px;
     min-height: 384px;
     background-color: $whiteBg;
-    cursor: pointer;
     transition: all .3s ease-in-out;
     position: relative;
     z-index: 100;
@@ -82,7 +81,7 @@
 }
 
 .card:hover:after {
-    top: -25px;
+    top: -20px;
     bottom: -45px;
     z-index: -10;
 }
@@ -125,4 +124,21 @@
 
 .button svg:hover text {
     fill: $whiteColor;
+}
+
+.like {
+    position: absolute;
+    top: 20px;
+    right: 33px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.like .like__fill {
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.like:hover .like__fill {
+    opacity: 1;
 }
