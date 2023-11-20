@@ -15,3 +15,25 @@
 .btn:hover {
     opacity: .8;
 }
+
+.left {
+    margin-right: 30px;
+}
+
+.right {
+    margin-left: 30px;
+}
+
+@media (max-width: 915px) {
+    .left {
+        position: absolute;
+        bottom: -70px;
+        right: 50%;
+    }
+
+    .right {
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+    }
+}

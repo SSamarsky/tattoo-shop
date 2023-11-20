@@ -3,16 +3,6 @@ import BtnOfSlider from "../ui/btns/btnOfSlider/btnOfSlider";
 import styles from "./Brands.module.scss";
 
 const Brands = () => {
-  const [widthWindow, setWidthWindow] = React.useState(window.screen.width);
-
-  React.useEffect(() => {
-    window.onresize = () => {
-      setWidthWindow(window.screen.width);
-    };
-    return () => {
-      window.onresize = false;
-    };
-  }, [widthWindow]);
   return (
     <div className={styles.brands}>
       <h2 className={styles.title}>Популятрные бренды</h2>
@@ -20,7 +10,7 @@ const Brands = () => {
       <div className={styles.slider}>
         <BtnOfSlider direction={"left"} />
         <div className={styles.items}>
-          {Array(widthWindow > 1354 ? 10 : widthWindow > 1103 ? 8 : 6)
+          {Array(10)
             .fill("img")
             .map((el, id) => {
               let s = `images/brands/${id + 1}.png`;
@@ -52,11 +42,11 @@ const Brands = () => {
           {Array(4)
             .fill(1)
             .map((el, i) => {
+              let classN = styles['line__ver' + i]
               return (
                 <svg
-                  className={styles.line__ver}
+                  className={classN}
                   key={i}
-                  style={{left:  230 * (i + 1) + (20 * i) + 'px'}}
                   xmlns="http://www.w3.org/2000/svg"
                   width="7"
                   height="204"
