@@ -27,13 +27,14 @@
 @media (max-width: 915px) {
     .left {
         position: absolute;
-        bottom: -70px;
-        right: 50%;
+        bottom: -30px;
+        right: -50px;
+       
     }
 
     .right {
         position: absolute;
-        bottom: -70px;
-        left: 50%;
+        bottom: -30px;
+        left: -50px;
     }
 }

@@ -80,3 +80,13 @@
 .right {
     right: 40px;
 }
+
+@media (max-width: 915px) {
+    .left {
+        left: 20px;
+    }
+    
+    .right {
+        right: 20px;
+    }
+}
