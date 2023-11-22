@@ -35,6 +35,11 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         margin-right: 50px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            color: #BB8C5F;
+        }
     }
 }
 
@@ -51,7 +56,13 @@
     margin-right: 71px;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: #BB8C5F;
+    }
 }
+
 
 .line__hor {
     display: none;

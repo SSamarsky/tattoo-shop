@@ -12,9 +12,22 @@
         .phone {
             display: flex;
             align-items: center;
+            transition: all .2s ease-in-out;
 
             & svg {
                 margin-right: 10px;
+            }
+
+            & svg path {
+                transition: all .2s ease-in-out;
+            }
+
+            &:hover {
+                color: #BB8C5F;
+            }
+
+            &:hover svg path {
+                stroke: #BB8C5F;
             }
         }
 
@@ -29,6 +42,19 @@
                 justify-content: center;
                 align-items: center;
                 border: 1px solid #BB8C5F;
+                transition: all .2s ease-in-out;
+
+                & svg path {
+                    transition: all .2s ease-in-out;
+                }
+
+                &:hover {
+                    border: 1px solid #FAF6F2;
+                }
+
+                &:hover svg path {
+                    fill: #FAF6F2;
+                }
             }
         }
     }
@@ -40,10 +66,24 @@
     }
 
     .mail {
+        transition: all .2s ease-in-out;
+
         & svg {
             margin-right: 17px;
             position: relative;
             left: 5px;
+        }
+
+        & svg path {
+            transition: all .2s ease-in-out;
+        }
+
+        &:hover {
+            color: #BB8C5F;
+        }
+
+        &:hover svg path {
+            stroke: #BB8C5F;
         }
     }
 }
