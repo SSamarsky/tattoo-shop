@@ -1,5 +1,5 @@
 import React from "react";
-import BtnOfSlider from "../ui/btns/btnOfSlider/btnOfSlider";
+import classNames from "classnames";
 import styles from "./Brands.module.scss";
 
 const Brands = () => {
@@ -8,7 +8,17 @@ const Brands = () => {
       <h2 className={styles.title}>Популятрные бренды</h2>
       <p className={styles.link}>Смотреть все</p>
       <div className={styles.slider}>
-        <BtnOfSlider direction={"left"} />
+        <button className={classNames(styles.btn, styles.left)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path d="M5 12L15 6.2265L15 17.7735L5 12Z" fill="#BB8C5F" />
+          </svg>
+        </button>
         <div className={styles.items}>
           {Array(10)
             .fill("img")
@@ -42,7 +52,7 @@ const Brands = () => {
           {Array(4)
             .fill(1)
             .map((el, i) => {
-              let classN = styles['line__ver' + i]
+              let classN = styles["line__ver" + i];
               return (
                 <svg
                   className={classN}
@@ -72,7 +82,17 @@ const Brands = () => {
               );
             })}
         </div>
-        <BtnOfSlider direction={"right"} />
+        <button className={classNames(styles.btn, styles.right)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path d="M18 12L8 6.2265L8 17.7735L18 12Z" fill="#BB8C5F" />
+          </svg>
+        </button>
       </div>
     </div>
   );

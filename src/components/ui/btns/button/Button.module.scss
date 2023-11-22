@@ -16,6 +16,10 @@
     & path {
         transition: all .2s ease;
     }
+
+    & text {
+        font-family: "Jost";
+    };
 }
 
 .btn__type2:hover path {

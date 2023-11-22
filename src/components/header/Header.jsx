@@ -19,6 +19,7 @@ const Header = () => {
           </div>
         </div>
         <svg
+          className={styles.line}
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
           height="6"
@@ -41,9 +42,11 @@ const Header = () => {
                 <div></div>
               </div>
             </div>
-          <Search />
+            <Search />
           </div>
-          <Navigation />
+          <div className={styles.nav}>
+            <Navigation />
+          </div>
         </div>
       </div>
     </header>
