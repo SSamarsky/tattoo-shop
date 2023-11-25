@@ -50,8 +50,8 @@
 @media (max-width: 1045px) {
     .container {
         grid-template-columns: 1fr;
-       justify-items: center;
-       gap: 40px;
+        justify-items: center;
+        gap: 40px;
     }
 
     .img {
@@ -63,5 +63,20 @@
 
     .button {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        justify-items: flex-start;
+    }
+
+    .info {
+        max-width: none;
+    }
+
+    .title {
+        margin-top: 5px;
+        font-size: 40px;
     }
 }

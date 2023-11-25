@@ -24,9 +24,8 @@ const Info = () => {
           раскрыть ваш потенциал.
         </p>
         <div className={styles.button}>
-            <Button2 type={2} text={"О компании"} />
+          <Button2 type={2} text={"О компании"} />
         </div>
-        
       </div>
     </div>
   );
