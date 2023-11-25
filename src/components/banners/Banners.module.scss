@@ -22,6 +22,7 @@
 }
 
 .title {
+    margin-top: 40px;
     position: absolute;
     color: #fff;
     font-family: 'Jost', sans-serif;
@@ -31,13 +32,11 @@
 }
 
 .title_left {
-    margin-top: 40px;
     left: 160px;
 }
 
 .title_right {
     max-width: 267px;
-    margin-top: 40px;
     left: 50px;
 }
 
@@ -90,5 +89,26 @@
 
     .title {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        width: 226px;
+        font-size: 30px;
+    }
+
+    .title_left {
+        left: 50px;
+    }
+
+    .title_right {
+        width: 100%;
+        max-width: 300px;
+        left: 50px;
+    }
+
+    .button_left {
+        left: 55px;
     }
 }

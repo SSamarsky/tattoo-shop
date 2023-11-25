@@ -27,7 +27,7 @@ const Banners = () => {
       </div>
       <div className={classNames(styles.banner, styles.right)}>
         <h2 className={classNames(styles.title, styles.title_right)}>
-          Foxx viper —хит 2021 года
+          Foxx viper — хит 2021 года
         </h2>
         <div className={classNames(styles.button, styles.button_right)}>
           <p className={styles.link}>Смотреть в каталоге</p>
