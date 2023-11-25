@@ -41,7 +41,7 @@ const Products = () => {
         <Checkbox />
         <Checkbox />
       </div>
-      {useResize() > 768 ? <Button text={"Показать ещё"} /> : ''}
+      {useResize() > 768 ? <Button text={"Показать ещё"} /> : ""}
     </div>
   );
 };

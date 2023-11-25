@@ -148,6 +148,8 @@
     .card {
         width: 229px;
         padding-top: 0;
+        cursor: pointer;
+
 
         .img {
             margin-top: 20px;
@@ -196,6 +198,9 @@
     .card:hover {
         margin-top: 20px;
         padding-top: 0;
+        -webkit-box-shadow: 3px 3px 9px 1px rgba(34, 60, 80, 0.15);
+        -moz-box-shadow: 3px 3px 9px 1px rgba(34, 60, 80, 0.15);
+        box-shadow: 3px 3px 9px 1px rgba(34, 60, 80, 0.15);
     }
 
     .card:hover:after {

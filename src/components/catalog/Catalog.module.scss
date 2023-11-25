@@ -144,3 +144,106 @@
         background-position-y: 0px;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        margin-bottom: 40px;
+        align-self: flex-start;
+        font-size: 50px;
+    }
+
+    .items {
+        max-height: 1000px;
+        overflow: hidden;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+
+        .item {
+            background-size: contain;
+            height: 314px;
+
+            .item__title {
+                margin-top: 50px;
+                width: 100%;
+            }
+        }
+
+        .item:nth-child(1n) {
+            width: 279px;
+            height: 330px;
+            background-position-x: 0;
+            background-position-y: 70px;
+        }
+
+        .item:nth-child(2n) {
+            width: 420px;
+            height: 330px;
+            background-position-x: 0;
+            background-position-y: 95px;
+        }
+
+        .item:nth-child(3n) {
+            width: 354px;
+            background-size: auto;
+            background-position-x: 65px;
+            background-position-y: 75px;
+        }
+
+        .item:nth-child(4n) {
+            width: 354px;
+            background-size: 65%;
+            background-position-x: 105px;
+            background-position-y: 90px;
+        }
+
+        .item:nth-child(5n) {
+            width: 728px;
+            background-size: 70%;
+            background-position-x: 105px;
+            background-position-y: 5px;
+
+            & h2 {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .button,
+    .button:focus {
+        width: 275px;
+        height: 70px;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .2s linear;
+    }
+
+    .button svg text {
+        fill: #BB8C5F;
+        font-weight: 300;
+        font-family: "Jost";
+        font-weight: 400;
+    }
+
+    .button svg,
+    .button svg text,
+    .button svg path {
+        transition: all .3s ease;
+    }
+
+    .button svg:hover path {
+        fill: #BB8C5F;
+    }
+
+    .button svg:hover text {
+        fill: #EEEEEE;
+    }
+}
