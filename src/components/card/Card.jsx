@@ -2,6 +2,7 @@ import styles from "./Card.module.scss";
 import classNames from "classnames";
 import StatusLabel from "../ui/statusLabel/StatusLabel";
 import React from "react";
+import { useResize } from "./../../hooks/useResize";
 
 const Card = ({ data }) => {
   return (
@@ -48,23 +49,53 @@ const Card = ({ data }) => {
       <p className={styles.title}>{data.name}</p>
       <p className={styles.price}>{data.price}</p>
       <button className={styles.button}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="259"
-          height="50"
-          viewBox="0 0 259 50"
-          fill="none"
-        >
-          <path
-            d="M16 7.5V1H243V7.5V16.25V16.8244L243.496 17.1138L257.015 25L243.496 32.8862L243 33.1756V33.75V42.5V49H16V42.5V33.75V33.1756L15.5039 32.8862L1.98463 25L15.5039 17.1138L16 16.8244V16.25V7.5Z"
-            fill="#EEEEEE"
-            stroke="#BB8C5F"
-            strokeWidth="2"
-          />
-          <text textAnchor="middle" x="130" y="30" style={{ fontSize: "20px" }}>
-            Добавить в корзину
-          </text>
-        </svg>
+        {useResize() > 768 ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="259"
+            height="50"
+            viewBox="0 0 259 50"
+            fill="none"
+          >
+            <path
+              d="M16 7.5V1H243V7.5V16.25V16.8244L243.496 17.1138L257.015 25L243.496 32.8862L243 33.1756V33.75V42.5V49H16V42.5V33.75V33.1756L15.5039 32.8862L1.98463 25L15.5039 17.1138L16 16.8244V16.25V7.5Z"
+              fill="#EEEEEE"
+              stroke="#BB8C5F"
+              strokeWidth="2"
+            />
+            <text
+              textAnchor="middle"
+              x="130"
+              y="30"
+              style={{ fontSize: "20px" }}
+            >
+              Добавить в корзину
+            </text>
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="208"
+            height="50"
+            viewBox="0 0 208 50"
+            fill="none"
+          >
+            <path
+              d="M16 7.5V1H192V7.5V16.25V16.8244L192.496 17.1138L206.015 25L192.496 32.8862L192 33.1756V33.75V42.5V49H16V42.5V33.75V33.1756L15.5039 32.8862L1.98463 25L15.5039 17.1138L16 16.8244V16.25V7.5Z"
+              fill="#EEEEEE"
+              stroke="#BB8C5F"
+              stroke-width="2"
+            />
+             <text
+              textAnchor="middle"
+              x="100"
+              y="30"
+              style={{ fontSize: "20px" }}
+            >
+              В корзину
+            </text>
+          </svg>
+        )}
       </button>
     </div>
   );

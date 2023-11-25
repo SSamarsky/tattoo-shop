@@ -68,6 +68,12 @@
     justify-content: center;
 }
 
+.checkbox_container {
+    display: none;
+    align-items: center;
+    gap: 15px;
+}
+
 
 @media (max-width: 1250px) {
     .nav {
@@ -84,6 +90,24 @@
         .nav__item {
             font-size: 20px;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 75px;
+    }
+
+    .cards {
+        margin-bottom: 65px;
+        max-width: 727px;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+
+    .checkbox_container {
+        display: flex;
     }
 }
 

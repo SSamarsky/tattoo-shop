@@ -5,9 +5,10 @@ import Button from "../ui/btns/button/Button";
 import BottomLine from "../ui/bottomLine/BottomLine";
 import classNames from "classnames";
 import React from "react";
+import Checkbox from "../ui/checkbox/Checkbox.jsx";
+import { useResize } from "../../hooks/useResize.js";
 
 const Products = () => {
-
   return (
     <div className={styles.container}>
       <ul className={styles.nav}>
@@ -30,15 +31,17 @@ const Products = () => {
       </ul>
       <div className={styles.cards}>
         {products.map((el, i) => {
-          return (
-            <Card
-              data={el}
-              key={i}
-            />
-          );
+          return <Card data={el} key={i} />;
         })}
       </div>
-      <Button text={"Показать ещё"} />
+      <div className={styles.checkbox_container}>
+        <Checkbox active={true} />
+        <Checkbox />
+        <Checkbox />
+        <Checkbox />
+        <Checkbox />
+      </div>
+      {useResize() > 768 ? <Button text={"Показать ещё"} /> : ''}
     </div>
   );
 };
