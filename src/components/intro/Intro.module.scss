@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 
     .container {
         padding: 0 20px;
@@ -112,4 +113,39 @@
         align-items: center;
         gap: 15px;
     }
+}
+
+
+@media (max-width: 768px) {
+    .intro {
+        max-height: 536px;
+        background-size: cover;
+    }
+
+    .info {
+        padding-top: 48px;
+        max-width: 476px;
+
+        .info__title {
+            font-size: 60px;
+        }
+    
+        .info__text {
+            margin-bottom: 40px;
+        }
+    }
+
+    .slide_control {
+        position: absolute;
+        transform: rotate(90deg);
+        bottom: -65px;
+        right: 285px;
+        
+       
+
+        .control__btn {
+            display: none;
+        }
+    }
+
 }
