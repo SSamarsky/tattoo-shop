@@ -22,3 +22,9 @@
         top: 8px;
     }
 }
+
+@media (max-width: 768px) {
+    .search {
+        max-width: 274px;
+    }
+}

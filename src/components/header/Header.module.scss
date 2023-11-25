@@ -113,7 +113,7 @@
     .header {
         min-width: 80px;
         .container {
-            padding-top: 10px;
+            padding-top: 12px;
             padding-bottom: 10px;
             display: flex;
             flex-direction: row-reverse;
@@ -147,5 +147,10 @@
 @media (max-width: 768px) {
     .up__right {
         margin-left: auto;
+    }
+
+    .control {
+        margin-left: 20px;
+        margin-right: 25px;
     }
 }
