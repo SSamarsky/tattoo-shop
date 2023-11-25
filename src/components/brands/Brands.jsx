@@ -1,24 +1,30 @@
 import React from "react";
 import classNames from "classnames";
 import styles from "./Brands.module.scss";
+import { useResize } from "./../../hooks/useResize";
 
 const Brands = () => {
   return (
     <div className={styles.brands}>
-      <h2 className={styles.title}>Популятрные бренды</h2>
+      <h2 className={styles.title}>Популярные бренды</h2>
       <p className={styles.link}>Смотреть все</p>
       <div className={styles.slider}>
-        <button className={classNames(styles.btn, styles.left)}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path d="M5 12L15 6.2265L15 17.7735L5 12Z" fill="#BB8C5F" />
-          </svg>
-        </button>
+        {useResize() > 768 ? (
+          <button className={classNames(styles.btn, styles.left)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path d="M5 12L15 6.2265L15 17.7735L5 12Z" fill="#BB8C5F" />
+            </svg>
+          </button>
+        ) : (
+          ""
+        )}
+
         <div className={styles.items}>
           {Array(10)
             .fill("img")
@@ -82,17 +88,21 @@ const Brands = () => {
               );
             })}
         </div>
-        <button className={classNames(styles.btn, styles.right)}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path d="M18 12L8 6.2265L8 17.7735L18 12Z" fill="#BB8C5F" />
-          </svg>
-        </button>
+        {useResize() > 768 ? (
+          <button className={classNames(styles.btn, styles.right)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path d="M18 12L8 6.2265L8 17.7735L18 12Z" fill="#BB8C5F" />
+            </svg>
+          </button>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

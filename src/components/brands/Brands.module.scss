@@ -166,3 +166,22 @@
         left: 50%;
     }
 }
+
+@media (max-width: 768px) {
+    .brands {
+        margin-top: 85px;
+        margin-bottom: 85px;
+    }
+
+    .title {
+        margin-left: 0;
+        margin-bottom: 40px;
+        text-align: start;
+        font-size: 50px;
+    }
+
+    .link {
+        right: 20px;
+        top: 25px;
+    }
+}
