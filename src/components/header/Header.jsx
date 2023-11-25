@@ -4,6 +4,8 @@ import UserInterface from "./userInterface/UserInterface";
 import Navigation from "./navigation/Navigation";
 import ContactsHeader from "./contactsHeader/ContactsHeader";
 import Search from "./search/Search";
+import { useResize } from "../../hooks/useResize";
+import React from "react";
 
 const Header = () => {
   return (
@@ -35,7 +37,9 @@ const Header = () => {
         <div className={styles.header__down}>
           <div className={styles.menu__control}>
             <div className={styles.control}>
-              <div className={styles.control__title}>Каталог</div>
+              <div className={styles.control__title}>
+                {useResize() > 768 ? 'Каталог' : 'Меню'}
+                </div>
               <div className={styles.burger}>
                 <div></div>
                 <div></div>

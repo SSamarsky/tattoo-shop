@@ -143,3 +143,9 @@
         flex-shrink: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .up__right {
+        margin-left: auto;
+    }
+}
