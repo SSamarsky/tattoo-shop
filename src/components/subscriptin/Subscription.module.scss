@@ -219,10 +219,17 @@
 }
 
 @media (max-width: 768px) {
+    .container {
+        margin-bottom: 155px;
+    }
+
+    .inner {
+        height: auto;
+    }
+
     .form {
         margin-right: 0;
     }
-
 
     .form form {
         display: flex;

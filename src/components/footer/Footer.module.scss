@@ -43,12 +43,12 @@
     }
 }
 
-.logo {
+.logo_wrap {
     margin-top: -10px;
     display: flex;
     flex-direction: column;
     gap: 55px;
-    
+
 }
 
 .link {
@@ -66,6 +66,33 @@
 
 .line__hor {
     display: none;
+}
+
+.logo {
+    margin-top: 14px;
+    display: flex;
+    text-transform: uppercase;
+    color: #BB8C5F;
+    width: 192px;
+    flex-direction: column;
+
+    .logo__title {
+        width: 170px;
+        font-size: 30px;
+        font-family: "Forum";
+        font-weight: 400;
+        align-self: center;
+    }
+
+    .logo__subtitle {
+        margin-top: 3px;
+        align-self: center;
+        font-size: 14px;
+        font-family: "Jost";
+        font-weight: 300;
+        letter-spacing: 3.5px;
+        line-height: 150%;
+    }
 }
 
 @media (max-width: 1360px) {
@@ -92,5 +119,47 @@
     .line__hor {
         width: 100%;
         display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .inner {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer__menu {
+        padding: 0 20px;
+        padding-top: 70px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 65px;
+        display: flex;
+    }
+
+    .logo_wrap {
+        margin-right: 75px;
+        gap: 25px;
+    }
+
+    .contacts {
+        padding: 0 20px;
+        padding-top: 68px;
+        padding-bottom: 70px;
+    }
+
+    .logo {
+        width: 280px;
+
+        .logo__title {
+            width: auto;
+            font-size: 43px;
+        }
+
+        .logo__subtitle {
+            margin-top: 5px;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
     }
 }
