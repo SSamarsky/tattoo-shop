@@ -1,5 +1,5 @@
 import styles from "./Subscription.module.scss";
-import Button2 from '../ui/btns/button/Button';
+import Button2 from "../ui/btns/button/Button";
 
 const Subscription = () => {
   const foo = () => window.scrollTo(0, 0);
@@ -23,10 +23,16 @@ const Subscription = () => {
               <input type="name" placeholder={"Введите имя"} />
             </label>
             <div className={styles.checkbox}>
-              <input id="conditions" className={styles.checkbox__input} type="checkbox" />
-              <label htmlFor="conditions">Вы соглашаетесь на обработку ваших персональных данных</label>
+              <input
+                id="conditions"
+                className={styles.checkbox__input}
+                type="checkbox"
+              />
+              <label htmlFor="conditions">
+                Вы соглашаетесь на обработку ваших персональных данных
+              </label>
             </div>
-            <Button2 type={1} text={'Подписаться'} />
+            <Button2 type={1} text={"Подписаться"} />
           </form>
         </div>
         <div className={styles.banner}>

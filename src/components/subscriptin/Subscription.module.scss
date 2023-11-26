@@ -81,8 +81,8 @@
     position: relative;
 }
 
-.checkbox__input:checked + label,
-.checkbox__input:not(:checked) + label {
+.checkbox__input:checked+label,
+.checkbox__input:not(:checked)+label {
     display: flex;
     align-items: center;
     padding-left: 40px;
@@ -93,8 +93,8 @@
     cursor: pointer;
 }
 
-.checkbox__input:checked + label::before,
-.checkbox__input:not(:checked) + label::before {
+.checkbox__input:checked+label::before,
+.checkbox__input:not(:checked)+label::before {
     content: '';
     display: block;
     position: absolute;
@@ -105,16 +105,16 @@
     transition: all .2s ease;
 }
 
-.checkbox__input:checked + label::before {
+.checkbox__input:checked+label::before {
     background-color: #BB8C5F;
 }
 
-.checkbox__input:not(:checked) + label::before {
+.checkbox__input:not(:checked)+label::before {
     background-color: #fff;
 }
 
-.checkbox__input:checked + label::after,
-.checkbox__input:not(:checked) + label::after {
+.checkbox__input:checked+label::after,
+.checkbox__input:not(:checked)+label::after {
     content: '';
     display: block;
     position: absolute;
@@ -128,11 +128,11 @@
     transform: rotate(-45deg);
 }
 
-.checkbox__input:checked + label::after {
+.checkbox__input:checked+label::after {
     opacity: 1;
 }
 
-.checkbox__input:not(:checked) + label::after {
+.checkbox__input:not(:checked)+label::after {
     opacity: 0;
 }
 
@@ -200,9 +200,10 @@
 @media (max-width: 1000px) {
 
     .inner {
-    display: block;
+        display: block;
         height: 562px;
     }
+
     .banner {
         display: none;
     }
@@ -214,5 +215,33 @@
 
     .text {
         max-width: 523px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        margin-right: 0;
+    }
+
+
+    .form form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .label {
+        margin-bottom: 10px;
+    }
+
+    .label input {
+        width: 353px;
+        max-width: none;
+    }
+
+    .checkbox {
+        margin-left: 5px;
+        margin-top: 25px;
+        order: 4;
     }
 }
