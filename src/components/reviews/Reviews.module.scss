@@ -33,5 +33,29 @@
 
 .btn__right {
     position: relative;
-   right: 20px;
+    right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin-bottom: 70px;
+    }
+
+    .title {
+        margin-left: 20px;
+        margin-bottom: 45px;
+        font-size: 50px;
+        align-self: flex-start;
+    }
+
+    .slider {
+        margin-bottom: 0;
+        gap: 40px;
+    }
+
+    .btn__left,
+    .btn__right {
+        display: none;
+    }
 }

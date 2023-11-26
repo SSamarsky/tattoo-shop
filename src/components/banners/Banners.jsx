@@ -1,4 +1,3 @@
-import BottomLine from "../ui/bottomLine/BottomLine";
 import styles from "./Banners.module.scss";
 import classNames from "classnames";
 
