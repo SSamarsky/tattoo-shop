@@ -141,11 +141,35 @@
         bottom: -65px;
         right: 285px;
 
-
-
         .control__btn {
             display: none;
         }
     }
 
+}
+
+
+@media (max-width: 766px) {
+    .intro {
+        min-height: max-content;
+        max-height: auto;
+        background-size: cover;
+    }
+
+    .slide_control {
+        right: calc(50% - 100px);
+    }
+}
+
+
+@media (max-width: 510px) {
+    .info {
+        .info__title {
+            font-size: 44px;
+        }
+
+        .info__text {
+            font-size: 20px;
+        }
+    }
 }
