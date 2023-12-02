@@ -154,3 +154,14 @@
         margin-right: 25px;
     }
 }
+
+@media (max-width: 766px) {
+    .control {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .menu__control {
+        width: auto;
+    }
+}

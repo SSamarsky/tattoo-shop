@@ -67,3 +67,19 @@
         gap: 50px;
     }
 }
+
+@media (max-width: 766px) {
+    .container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        margin-right: 15px;
+        & a:nth-child(3),
+        & a:nth-child(2) {
+            display: none;
+        }
+    }
+}
