@@ -248,3 +248,39 @@
         fill: #EEEEEE;
     }
 }
+
+
+@media (max-width: 760px) {
+    .items {
+        justify-content: center;
+        min-height: 1400px;
+
+        .item:nth-child(n) {
+            width: 70%;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .items {
+
+        .item:nth-child(n) {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .items {
+
+        .item:nth-child(n) {
+            min-width: none;
+            width: 100%;
+
+            .item__title_4 {
+                width: 150px;
+            }
+        }
+    }    
+ }
